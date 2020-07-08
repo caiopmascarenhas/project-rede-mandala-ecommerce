@@ -1,0 +1,18 @@
+#topfooter{
+    background-color:rgb(230, 99, 51)!important;
+}
+#cardPag{
+    margin-left: 0.3em;
+}
+#seloLicence{
+    margin-top: 0.5em;
+    margin-left: 0.3em;
+}
+#textDecoration {
+    color: rgb(0, 0, 0) ;
+    text-decoration: none; 
+}
+#textDecoration:hover{
+    opacity: 0.7;
+}
+

@@ -1,0 +1,25 @@
+.container{
+    margin-bottom: 10em;
+}
+
+#bntClose{
+    background-color:rgb(255, 255, 255)!important;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+#bntClose:hover{
+    background-color:rgb(0, 0, 0)!important;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+#selectCart{
+    width: 7em !important;
+    margin-left: 4em;
+    margin-right: 2em;
+}
+
+#deleteCart{
+    width: 4em;
+}

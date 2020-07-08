@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="card mt-5 mb-5">
+        <h5 id="titulo" class="mt-3 mb-3">Recuperar Senha</h5>
+        <form [formGroup]="formForgot" (ngSubmit)="recuperarSenha()">
+            <div class="form-group">
+                <label for="user" class="active">Digite seu Email</label>
+                <input id="user" formControlName="user" name="user" type="email" class="form-control validate" placeholder="E-mail" autofocus>
+                <div *ngIf="!email.pristine && email.errors">
+                    <p class="alert alert-danger" *ngIf="email.errors.required">
+                         Email é obrigatório.
+                     </p>
+                     <p class="alert alert-danger" *ngIf="email.errors.email">
+                         Digite um email válido.
+                     </p>
+                     <p class="alert alert-danger" *ngIf="email.errors.emailInexistente">
+                        Email não cadastrado
+                    </p>
+                 </div>
+            </div>
+            <button id="bntForgot"class="btn btn-outline-dark btn-rounded btn-block my-4 waves-effect z-depth-0">Recuperar</button>
+        </form>
+    </div>
+</div>

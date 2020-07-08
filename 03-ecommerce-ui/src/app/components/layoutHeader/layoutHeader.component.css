@@ -1,0 +1,47 @@
+/* NAVBAR PRINCIAPL */
+#menuPrimary {
+    background-color: rgb(230, 99, 51)!important;
+    font-family: sans-serif !important;
+}
+#navPrimary {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 1.8em;
+}
+#navPrimary:hover {
+    color: rgb(0, 0, 0);
+}
+#menuPrimary img{
+    margin-right: 0.5em;
+}
+/* NAVBAR SECUNDARIA */
+#navContainer{
+    background-color: rgba(238, 238, 238, 0.555);
+    margin-bottom: 3em !important;
+}
+#navSecondary {
+    color: black !important;
+    font-weight: bold;
+    text-decoration: none;
+}
+#navSecondary:hover {
+    opacity: 0.4;
+}
+#imgSecundary{
+    margin-right: 0.5em;
+}
+
+
+@media screen and (max-width: 720px) {
+    #navPrimary{
+        margin-top: 0.5em;
+    }
+    .navbar-brand img{
+        width: 100px;
+        height: 50px;
+    }
+
+}
+
+

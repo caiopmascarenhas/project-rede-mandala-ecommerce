@@ -1,0 +1,62 @@
+<footer id="sticky-footer" class="py-0 navbar-light bg-light ">
+    <div id="topfooter" class="text-white">
+        <div class="container">
+            <div id="footerredesocial" class="row py-2 d-flex align-items-center">
+                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                    <h6 class="mb-0">Conecte-se conosco nas redes sociais!</h6>
+                </div>
+                <div class="col-md-6 col-lg-7 text-center text-md-right">
+                    <a href="#" target="_blank" class="fb-ic" type="button" (click)="alertFace()" data-toggle="modal" data-target="#modalExemplo">
+                        <img class="fab fa-facebook-f white-text mr-4" src="../../../assets/imgFooter/facebook.png" alt="facebook" width="35px" height="35px">
+                    </a>
+                    <a href="https://www.instagram.com/corpredemandala/" target="_blank" class="ins-ic" >
+                        <img class="fab fa-instagram white-text" src="../../../assets/imgFooter/instagram.png" alt="instagram" width="35px" height="35px">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row mt-2">
+            <div id="footerContato" class="col-xl-4 mx-auto">
+                <h6 class="text-uppercase font-weight-bold">REDE MANDALA</h6>
+                <hr class="deep-purple accent-1 mb-1 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p align="justify">A Rede Mandala é uma loja virtual especializada em redes de descanso. Não vendemos simplesmente redes, proporcionamos a você ótimos momentos de descanso em uma rede artesanal de qualidade por um preço justo. </p>
+            </div>
+            <div id="footerContato" class="mx-auto">
+                <h6 class="text-uppercase font-weight-bold">MENU</h6>
+                <hr class="deep-purple accent-1 mb-1 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p *ngFor="let item of navigation">
+                    <a id="textDecoration" class="fas fa-home mr-0" routerLink="{{item.route}}">{{item.label}}</a>
+                </p>
+            </div>
+            <div id="footerContato" class="mx-auto">
+                <h6 class="text-uppercase font-weight-bold">Contato</h6>
+                <hr class="deep-purple accent-1 mb-1 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p *ngFor="let item of contact">
+                    <a id="textDecoration" class="fas fa-home mr-0" routerLink="{{item.route}}">{{item.label}}</a>
+                </p>
+            </div>
+            <div id="footerContato" class="mx-auto">
+                <h6 class="text-uppercase font-weight-bold">PAGUE COM</h6>
+                <hr class="deep-purple accent-1 mb-1 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    <img src="../../../assets/imgFooter/mastercard.svg" alt="Mastercard" width="35px" height="35px">
+                    <img id="cardPag" src="../../../assets/imgFooter/visa.svg" alt="Visa" width="35px" height="35px">
+                </p>
+            </div>
+            <div id="footerContato" class="col-xl-1 mx-auto">
+                <h6 class="text-uppercase font-weight-bold">SELOS</h6>
+                <hr class="deep-purple accent-1 mb-1 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    <img src="../../../assets/imgFooter/ssl.png" alt="SSL" width="100px" height="35px">
+                    <img id="seloLicence" src="../../../assets/imgFooter/bit.png" alt="Bit" width="50px" height="50px">
+                </p>
+
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-1">© 2020 Copyright:
+            <a id="textDecoration" routerLink="/"> RedeMandala.com</a>
+        </div>
+    </div>
+</footer>

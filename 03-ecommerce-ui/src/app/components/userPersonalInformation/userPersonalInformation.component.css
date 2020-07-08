@@ -1,0 +1,23 @@
+.container{
+    margin-bottom: 2.3em;
+}
+#btnSave{
+    font-weight: bold;
+}
+
+#btnCancel{
+    font-weight: bold;
+    margin-left: 2em;
+}
+
+
+#btnClase{
+    background-color: rgb(255, 255, 255)!important;
+    color: rgb(0, 0, 0) !important;
+    font-weight: bold;
+}
+#btnClase:hover{
+    background-color: rgb(0, 0, 0)!important;
+    color: rgb(255, 255, 255) !important;
+    font-weight: bold;
+}

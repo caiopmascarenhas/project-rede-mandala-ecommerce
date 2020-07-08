@@ -1,0 +1,11 @@
+.container{
+    margin-bottom: 30em;
+}
+@media screen and (max-width: 812px) {
+    #card{
+        margin-left: 0em !important;
+    }
+    .container{
+        margin-bottom: -2em;
+    }
+}

@@ -1,0 +1,166 @@
+<div class="container">
+    <form [formGroup]="formRegister" (ngSubmit)="enviarForm()" class="row">
+        <div class="form-group col-md-6 mt-5">
+            <h2><label for="campo1">DADOS PESSOAIS</label></h2>
+            <div class="form-group">
+                <label for="email">E-mail: </label>
+                <input id="email" formControlName="email" class="form-control" value="user@email.com" name="email"
+                    type="email" autofocus>
+                <div *ngIf="!email.pristine && email.errors">
+                   <p class="alert alert-danger" *ngIf="email.errors.required">
+                        Email é obrigatório.
+                    </p>
+                    <p class="alert alert-danger" *ngIf="email.errors.email">
+                        Digite um email válido.
+                    </p>
+                    <p class="alert alert-danger" *ngIf="email.errors.emailCadastrado">
+                        Este email já esta cadastrado.
+                    </p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password">Senha: </label>
+                <input id="password" formControlName="novaSenha" name="password" type="password"
+                    class="form-control validate" placeholder="Digite uma Senha">
+                    <div *ngIf="!novaSenha.pristine && novaSenha.errors">
+                        <p class="alert alert-danger" *ngIf="novaSenha.errors.required">
+                             Senha é obrigatória.
+                         </p>
+                     </div>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirme a senha: </label>
+                <input id="confirmPassword" formControlName="confirmarSenha" name="confirmPassword" type="password"
+                    class="form-control validate" placeholder="Digite uma Senha">
+                <div *ngIf="!confirmPassword.pristine && confirmPassword.errors">
+                    <p class="alert alert-danger" *ngIf="confirmPassword.errors.senhasDiferentes">
+                        Senhas diferentes.
+                    </p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="nome">Nome: </label>
+                <input id="nome" formControlName="nome" class="form-control" placeholder="Digite seu nome completo"
+                    name="nome" type="text">
+                    <div *ngIf="!nome.pristine && nome.errors">
+                        <p class="alert alert-danger" *ngIf="nome.errors.required">
+                             Nome é obrigatório.
+                         </p>
+                     </div>
+            </div>
+            <div class="form-group">
+                <label for="sobrenome">Sobrenome: </label>
+                <input id="sobrenome" formControlName="sobrenome" class="form-control"
+                    placeholder="Digite seu sobrenome" name="sobrenome" type="text">
+                    <div *ngIf="!sobrenome.pristine && sobrenome.errors">
+                        <p class="alert alert-danger" *ngIf="sobrenome.errors.required">
+                             Sobrenome é obrigatório.
+                         </p>
+                     </div>
+            </div>
+            <div class="form-group">
+                <label for="nasc">Data de nascimento: </label>
+                <input id="nasc" formControlName="nasc" [dropSpecialCharacters]="false" mask="00/00/0000"
+                    class="form-control" name="nasc" type="text">
+                <div *ngIf="!nasc.pristine && nasc.errors">
+                    <p class="alert alert-danger" *ngIf="nasc.errors.dataInvalida">
+                        Data inválida.
+                    </p>
+                    <p class="alert alert-danger" *ngIf="nasc.errors.menorDeIdade">
+                        Você precisa ter mais de 18 anos para se cadastrar.
+                    </p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="cpf">CPF: </label>
+                <input id="cpf" formControlName="cpf" mask="000.000.000-00" class="form-control" placeholder="Digite seu CPF" name="cpf" type="text" >
+                <div *ngIf="!cpf.pristine && cpf.errors">
+                    <p class="alert alert-danger" *ngIf="cpf.errors.minlength">
+                        Digite todos os números.
+                    </p>
+                    <p class="alert alert-danger" *ngIf="cpf.errors.invalidCpf">
+                        CPF inválido.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="form-group col-md-6 mt-5">
+            <h2><label for="campo2">RESIDÊNCIA</label></h2>
+            <div class="form-group">
+                    <label for="cep">Cep: </label>
+                    <input id="cep" (blur)="pegarCep()" mask="00000-000" formControlName="cep" class="form-control" placeholder="Digite seu CEP" name="cep" type="text">
+                    <div *ngIf="!cep.pristine && cep.errors">
+                        <p class="alert alert-danger" *ngIf="cep.errors.minlength">
+                            Digite todos os números.
+                        </p>
+                        <p class="alert alert-danger" *ngIf="cep.errors.required">
+                            Cep é obrigatorio.
+                        </p>
+                    </div>
+                </div>
+            <div class="form-group">
+                <label for="endereco">Endereço: </label>
+                <input id="endereco" formControlName="endereco" class="form-control" placeholder="Digite seu endereco"
+                    name="endereco" type="text" readonly>
+            </div>
+            <div class="form-group">
+                <label for="bairro">Bairro: </label>
+                <input id="bairro" formControlName="bairro" class="form-control" placeholder="Digite seu bairro"
+                    name="bairro" type="text" readonly>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <label for="numero">Nº: </label>
+                    <input id="numero" formControlName="numero" class="form-control" placeholder="Digite o Nº"
+                        name="numero" type="text">
+                        <div *ngIf="!numero.pristine && numero.errors">
+                            <p class="alert alert-danger" *ngIf="numero.errors.required">
+                                Numero é obrigatório.
+                            </p>
+                            
+                        </div>
+                </div>
+                <div class="col-9">
+                    <label for="complemento">Complemento: </label>
+                    <input id="complemento" formControlName="complemento" class="form-control"
+                        placeholder="Digite seu complemento" name="complemento" type="text">
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-4">
+                    <label for="estado">Estado: </label>
+                    <input id="estado" formControlName="estado" class="form-control" placeholder="Digite seu estado"
+                        name="estado" type="text" readonly>
+                </div>
+                <div class="col-8">
+                    <label for="cidade">Cidade: </label>
+                    <input id="cidade" formControlName="cidade" class="form-control mb-2"
+                        placeholder="Digite seu cidade" name="cidade" type="text" readonly>
+                </div>
+            </div>
+            <button id="bntRegister" [disabled]="!formRegister.valid"
+                class="btn btn-outline-dark btn-rounded btn-block my-4 waves-effect z-depth-0 mt-5">Cadastrar</button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Mensagem para Você!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../../assets/icon/tick.svg" width="30px">
+                            Seu cadastro foi realizado com sucesso! Agora acesse sua conta.
+                        </div>
+                        <div class="modal-footer">
+                            <button id="bntRegister" type="button" class="btn btn-secondary" data-dismiss="modal"
+                                [routerLink]="['/systemLogin']">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

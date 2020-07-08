@@ -1,0 +1,28 @@
+.container{
+    margin-bottom: 3.5em;
+}
+#colorCard{
+    background-color: rgb(0, 0, 0)!important;
+}
+
+#botao{
+    background-color:rgb(255, 255, 255)!important;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+#botao:hover{
+    background-color:rgb(0, 0, 0)!important;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+#btnClase{
+    background-color: rgb(255, 255, 255)!important;
+    color: rgb(0, 0, 0) !important;
+    font-weight: bold;
+}
+#btnClase:hover{
+    background-color: rgb(0, 0, 0)!important;
+    color: rgb(255, 255, 255) !important;
+    font-weight: bold;
+}

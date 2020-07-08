@@ -1,0 +1,143 @@
+<div class="container">
+    <div class="py-5 text-center">
+        <h3 class="my-0 font-weight-normal mt-2"><b>PAGAMENTO DA COMPRA</b></h3>
+    </div>
+    <div class="row">
+        <div class="col-lg-8">
+            <h3>Cartões Cadastrados</h3>
+            <div class="row">
+                <div class=" col-lg-6 mb-3 mt-3 text-center" *ngFor="let i of cartoes">
+                    <div class="card h-80">
+                        <div class="card-header">
+                            <h6 class="my-2 font-weight-normal"><b>Cartão de crédito</b></h6>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled mt-1">
+                                <li>Numero Final: {{i.numeroCartao}}</li>
+                                <li>Titular: {{i.nomeProprietario}}</li>
+                            </ul>
+                            <button type="button" class="btn btn-lg btn-block btn-primary"
+                             (click)="selecionarCartao(i.numeroCartao, i.codigoSeguranca)">Selecionar</button>
+                               
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3>Endereços Cadastrados</h3>
+            <div class="row">
+                <div class=" col-lg-6 mb-3 mt-3 text-center" *ngFor="let i of enderecos">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h6 class="my-2 font-weight-normal"><b>{{i.endereco}}</b></h6>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled mt-1 ">
+                                <li>CEP: {{i.cepEndereco}}</li>
+                                <li>Nº: {{i.numeroEndereco}}</li>
+                                <li>BAIRRO: {{i.bairroEndereco}}</li>
+                            </ul>
+                            <button type="button" class="btn btn-lg btn-block btn-primary"
+                                (click)="selecionarEndereco(i.endereco, i.numeroEndereco, i.bairroEndereco)">Selecionar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 order-md-2 mb-4">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-muted mt-1">Pagar com: </span>
+            </h4>
+            <ul class="list-group mb-3 col-12">
+                <li class="list-group-item d-flex justify-content-between py-4">
+                  <span>{{cartaoSelecionado}}</span>
+                </li>
+            </ul>
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-muted mt-1">Entregar em:</span>
+            </h4>
+            <ul class="list-group mb-3 col-12">
+                <li class="list-group-item d-flex justify-content-between py-4">
+                    <span>{{enderecoSelecionado}}</span>
+                </li>
+            </ul>
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-muted">Total a pagar:</span>
+            </h4>
+            <ul class="list-group mb-3 col-12">
+                <li class="list-group-item d-flex justify-content-between">
+                    <span>Total (BRL)</span>
+                    <strong>{{total | currency: 'R$ '}}</strong>
+                </li>
+            </ul>
+
+            <form class="" [formGroup]="formCheckout" (ngSubmit)="finalizar()">
+                <div *ngIf="formCheckout.errors">
+                    <p class="text-danger" *ngIf="formErrorEnd">
+                        Selecione um endereço
+                    </p>
+                    <p class="text-danger" *ngIf="formErrorcar">
+                        Selecione um cartão
+                    </p>
+                </div>
+                
+                <div class="input-group">
+                    <button class=" btn btn-warning col-6 mb-2" type="button"
+                        routerLink="/userColumnMenu/userAlterAddress">
+                        <b>Alterar endereço</b></button>
+     
+
+                    <button id="bntCheckout" class="btn btn-success btn-block col-8" type="submit"
+                        [disabled]="formCheckout.invalid" >
+                        <b>Finalizar Pedido</b></button>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Mensagem para Você!</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="../../../assets/icon/tick.svg" width="30px">
+                                    Seu Pedido foi realizado com sucesso!
+                                    Obrigado por comprar na nossa loja!
+                                </div>
+                                <div class="modal-footer">
+                                    <button id="bntClose" type="button" class="btn btn-secondary" data-dismiss="modal"
+                                        [routerLink]="['/userColumnMenu/userOrders']">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="CartaoModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Seu cartão ainda não foi cadastrado!
+                                    </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="../../../assets/icon/tick.svg" width="30px">
+                                    Deseja adicionar um cartão?
+                                </div>
+                                <div class="modal-footer">
+                                    <button id="bntClose" type="button" class="btn btn-secondary" data-dismiss="modal"
+                                        [routerLink]="['/userColumnMenu/userPayment']">Adicionar</button>
+                                    <button id="bntClose" type="button" class="btn btn-secondary"
+                                        data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,61 @@
+<div class="container">
+    <table id="cart" class="table table-hover table-condensed">
+        <thead>
+            <tr>
+                <th style="width:70%">Produto</th>
+                <th style="width:8%">Quantidade</th>
+                <th style="width:5%">Preço</th>
+                <th style="width:10%"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let produto of cart; let i = index">
+                <td data-th="Produto">
+                    <div class="row">
+                        <div class="col-sm-2 hidden-xs">
+                            <img src={{produto._imagemPrincipal}} alt="..." class="img-responsive"
+                                style="width:100px; height: 100px;" />
+                        </div>
+                        <div class="col-sm-10">
+                            <h4 class="nomargin">{{produto._nomeProduto}}</h4>
+                            <p align="justify">{{produto._descricaoProduto}}</p>
+                        </div>
+                    </div>
+                </td>
+                <td data-th="Quantidade">
+                    <!-- ATUALIZADO -->
+                    <input type="number" class="form-control text-center" value="{{produto.qtde}}" 
+                    min="1" max="10" (change)="aumentarUnidadeProduto($event.target.value, (i))">
+                </td>
+                <td data-th="Preço" class="text-center">
+                    {{produto._valorProduto * produto.qtde | currency: 'R$ '}}</td>
+                <td class="actions" data-th="">
+
+                    <button (click)="deletarDoCarrinho(i)" class="btn btn-danger "><i
+                            class="fa fa-trash-o"><img src="../../../assets/imgCart/delete.svg"
+                                width="15px"></i></button>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr class="visible-xs">
+            </tr>
+            <tr>
+                <td><a class="btn btn-warning" routerLink="/pageProductRedeAdult"><i class="fa fa-angle-left"></i>Adicionar
+                        produtos</a></td>
+                <td colspan="2" class="hidden-xs"></td>
+                <td class="hidden-xs text-center"><strong>Total{{total | currency: 'R$ '}}</strong></td>
+                <td> <button id="bntNext" class="btn btn-success btn-block" routerLink="/userCheckout" [disabled]="total == 0"><b>CONTINUAR</b><i
+                            class="fa fa-angle-right"></i></button></td>
+            </tr>
+            <tr>
+                <td>
+                    <a id="bntAddress" class="btn btn-warning" routerLink="/userColumnMenu/userAlterAddress"><i
+                            class="fa fa-angle-left"></i> Verificar endereço</a>
+                    <a id="bntCheck" class="btn btn-warning " routerLink="/userColumnMenu/userPayment"><i
+                            class="fa fa-angle-left"></i> Verificar dados de pagamento</a>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</div>

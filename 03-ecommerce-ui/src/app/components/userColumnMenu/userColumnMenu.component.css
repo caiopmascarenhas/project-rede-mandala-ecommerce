@@ -1,0 +1,11 @@
+.borderUser {
+    padding-right: 0;
+    border-right: 1px solid #BABABA;
+}
+
+@media screen and (max-width: 770px) {
+    .borderUser {
+        border-right: none;
+        text-align: center;
+    }
+}

@@ -1,0 +1,42 @@
+<div class="mb-4 row justify-content-center">
+    <h3>Detalhes do pedido</h3>
+</div>
+
+<div id="main" class="container-fluid" style="margin-top: 50px">
+    <div>
+        <p>Ordem do pedido: {{idPedido}}</p>
+        <p>Comprado por: {{user}}</p>
+        <p>Data do pedido: {{data | date: 'dd/MM/yyyy'}}</p>
+        <p>Endereço para entrega: {{endereco}}</p>
+    </div>
+    <div id="list" class="row">
+        <div class="table-responsive col-md-12">
+            <table class="table table-striped" cellspacing="0" cellpadding="0">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Valor Unitário</th>
+                        <th>Quantidade</th>
+                        <th>SubTotal</th>
+                    </tr>
+                </thead>
+                <tbody  *ngFor="let i of listaNome">
+                    <tr>
+                        <td>{{i.nomeProduto}}</td>
+                        <td>{{i.valorProduto | currency: 'R$'}}</td>
+                        <td>{{i.quantidade}}</td>
+                        <td>{{i.valorProduto * i.quantidade | currency: 'R$'}}</td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>Total da Compra:</th>
+                        <th>{{total | currency: 'R$'}}</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>

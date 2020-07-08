@@ -1,0 +1,38 @@
+.card{
+    width: 400px;
+    height: 400px;
+    background: #fff;
+    margin: auto;
+    align-items: center;
+    display: flex;
+}
+
+#bntLogin{
+    background-color: white !important;
+    color: black !important;
+    font-weight: bold !important;
+}
+
+#bntLogin:hover{
+    background-color: rgb(0, 0, 0) !important;
+    color: rgb(255, 255, 255) !important;
+    font-weight: bold !important;
+}
+#textRegister{
+    text-decoration: none !important;
+    color: black !important;
+    font-weight: bold;
+}
+#textRegister:hover{
+    text-decoration: none !important;
+    color: rgb(156, 156, 156) !important;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 812px) {
+    .card{
+        margin-left: -0.3em;
+        width: 22em;
+    }
+
+}
