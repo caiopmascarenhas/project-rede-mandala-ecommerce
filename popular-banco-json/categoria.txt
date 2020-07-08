@@ -1,0 +1,7 @@
+{
+		"descCategoria" : "Gancho"
+}
+
+{
+		"descCategoria" : "Rede"
+}

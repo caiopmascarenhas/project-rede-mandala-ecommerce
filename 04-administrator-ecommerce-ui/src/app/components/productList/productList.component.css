@@ -1,0 +1,87 @@
+#imgProduct{
+    width: 5em !important;
+    height: 5em;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+}
+
+#titleHeader th{
+    font-weight: bolder;
+}
+
+button{
+    width: 8em;
+}
+
+#status{
+    width: 8em;
+}
+
+.invoice header {
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #3989c6
+}
+
+.invoice main {
+    padding-bottom: 50px
+}
+
+.invoice main .thanks {
+    margin-top: -100px;
+    font-size: 2em;
+    margin-bottom: 50px
+}
+
+.invoice main .notices .notice {
+    font-size: 1.2em
+}
+
+.invoice table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 20px;
+    
+}
+
+.invoice table td,.invoice table th {
+   
+    padding: 5px;
+    background: rgb(255, 255, 255);
+}
+
+.invoice table th {
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 16px
+}
+
+.invoice table td h3 {
+    margin: 0;
+    font-weight: 400;
+    color: #000000;
+    font-size: 1.2em
+}
+
+.invoice table #total {
+    background-color: #00000004;
+    color: rgb(255, 61, 2);
+    font-size: 1.2em;
+}
+
+@media print {
+    .invoice {
+        font-size: 11px!important;
+        overflow: hidden!important
+    }
+
+    .invoice footer {
+        position: absolute;
+        bottom: 10px;
+        page-break-after: always
+    }
+
+    .invoice>div:last-child {
+        page-break-before: always
+    }
+}

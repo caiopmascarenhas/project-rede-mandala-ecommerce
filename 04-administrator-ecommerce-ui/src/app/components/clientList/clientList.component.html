@@ -1,0 +1,37 @@
+<div class="container mt-5">
+    <h4 class="font-weight-bolder text-center mb-3">CLIENTES CADASTRADOS</h4>
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body p-0">
+                    <div class="row p-5">
+                        <div class="col-md-12">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="border-0 text-uppercase small font-weight-bold">ID</th>
+                                        <th class="border-0 text-uppercase small font-weight-bold">Nome</th>
+                                        <th class="border-0 text-uppercase small font-weight-bold">Endereço</th>
+                                        <th class="border-0 text-uppercase small font-weight-bold">Email</th>
+                                        <th class="border-0 text-uppercase small font-weight-bold">Data De Nascimento</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let i of clientes">
+                                        <td>{{i.idUsuario}}</td>
+                                        <td>{{i.nomeUsuario}} {{i.sobrenomeUsuario}}</td>
+                                        <td>{{i.enderecos[0].endereco}} {{i.enderecos[0].numeroEndereco}} {{i.enderecos[0].bairroEndereco}} {{i.enderecos[0].cidadeEndereco}}</td>
+                                        <td>{{i.emailUsuario}}</td>
+                                        <td>{{i.dataNascimento}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

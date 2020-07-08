@@ -1,0 +1,73 @@
+<div class="wrapper fadeInDown mb-5">
+    <div id="formContent">
+        <form class="py-3">
+            <h4 class="font-weight-bolder text-center mb-3">CADASTRAR PRODUTO</h4>
+            <input type="text" class="fadeIn second" name="login" placeholder="Nome Produto"
+                (input)="this.nomeProduto = $event.target.value">
+            <div class="row">
+                <div class=" col-12">
+                    <div class="row">
+                        <div id="subTitulo" class="col-md-5">
+                            <textarea class="form-control" id="" name="" placeholder="SubTítulo"
+                                (input)="this.subtitulo = $event.target.value"></textarea>
+
+                        </div>
+                        <div id="descricao" class="col-md-5">
+                            <textarea class="form-control" id="" name="" placeholder="Descrição"
+                                (input)="this.descricao = $event.target.value"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div id="dimensao" class="col-md-4">
+                            <input type="text" class="fadeIn third" name="login" placeholder="Dimensão"
+                                (input)="this.dimensao = $event.target.value">
+
+                        </div>
+                        <div id="comprimento" class="col-md-4">
+                            <input type="text" class="fadeIn third" name="login" placeholder="Comprimento"
+                                (input)="this.comprimento = $event.target.value">
+                        </div>
+                        <div id="peso" class="col-md-4">
+
+                            <input type="text" class="fadeIn third" name="login" placeholder="Peso"
+                                (input)="this.peso = $event.target.value">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="primeiroCampo" class="col-md-6">
+                            <input type="text" class="fadeIn third" name="login" placeholder="Valor sem desconto"
+                                (input)="this.valorSemDesconto = $event.target.value">
+                        </div>
+                        <div id="segundoCampo" class="col-md-6">
+                            <input type="text" class="fadeIn third" name="login" placeholder="Valor com desconto"
+                                (input)="this.valorComDesconto = $event.target.value">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="primeiroCampo" class="col-md-6">
+                            <input type="text" class="fadeIn third" name="login" placeholder="Imagem Principal"
+                                (input)="this.imagemPrincipal = $event.target.value">
+                        </div>
+                        <div id="segundoCampo" class="col-md-6">
+                            <input type="text" class="fadeIn third" name="login" placeholder="Imagem Secundaria"
+                                (input)="this.imagemSecundaria = $event.target.value">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-2 d-flex justify-content-center">
+                <select class="form-control " (input)="this.categoria = $event.target.value">
+                    <option disabled selected>Selecione A Categoria</option>
+                    <option value="1">Acessórios</option>
+                    <option value="2">Redes Para Adultos</option>
+                    <option value="3">Redes Para Crianças</option>
+                </select>
+            </div>
+            <input id="bntLogar" type="submit" class="fadeIn fourth mt-5" value="Cadastrar" (click)="teste()">
+        </form>
+        <div id="formFooter">
+            <a class="underlineHover"></a>
+        </div>
+    </div>
+</div>

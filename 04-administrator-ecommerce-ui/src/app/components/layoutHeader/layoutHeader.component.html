@@ -1,0 +1,57 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand">SYSTEM MANDALA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="underlineHover nav-item active">
+                    <a class="nav-link" routerLink="/pageHome">Página Principal<span class="sr-only">(Página
+                            atual)</span></a>
+                </li>
+                <li class="underlineHover nav-item dropdown">
+                    <a class=" nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Produtos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="underlineHover dropdown-item" routerLink="/productList">Lista De Produtos</a>
+                        <a class="underlineHover dropdown-item" routerLink="/productAdd">Adicionar Produto</a>
+                        
+                    </div>
+                </li>
+                <li class=" underlineHover nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Clientes
+                    </a>
+                    <div class=" dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class=" underlineHover dropdown-item" routerLink="/clientList">Lista de Clientes</a>
+                    </div>
+                </li>
+                <li class="underlineHover nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Pedidos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="underlineHover dropdown-item" routerLink="/orderList">Lista de Pedidos</a>
+                    </div>
+                </li>
+                <li class="underlineHover nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        NameUser
+                    </a>
+                    <div class=" dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class=" underlineHover dropdown-item "
+                            routerLink="/profileUser/ProfilePersonalInformation">Perfil</a>
+                        <a class="underlineHover dropdown-item" routerLink="/profileLogin">Deslogar-se</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,57 @@
+
+
+{
+    "nomeProduto": "Gancho para rede de descanso",
+	"subTitulo": "Gancho para rede de descanso oxidado fabricado pela empresa União Mundial",
+	"descricaoProduto": "Gancho para rede de dormir oxidado fabricado pela empresa união mundial, o gancho de rede oxidado é feito de material altamente resistente, não enferruja e pode ser usado tanto em concreto, tijolo ou madeira. Cada gancho acompanha quatro parafusos de cabeça redonda com fenda e quatro buchas de 10 mm.   Em paredes de concreto e madeira podem suportar até 10 quilos. Dimensões:  base do gancho 10 cm, parafusos e buchas 10mm peso unitário: /- 300 gramas  capacidade máxima de carga: 10 kg em paredes de concreto e madeira composição: 100 aço oxidado   garantias: o prazo de validade é de tempo indeterminado.  ",
+	"dimensoesProduto": "10x6 cm",
+	"comprimentoProduto": "Informação não fornecida pela fabricante",
+	"pesoProduto": "Informação não fornecida pela fabricante",
+	"desconto" : 160.30,
+	"valorProduto" : 83.61,
+	"imagemPrincipal": "../../../assets/imgProducts/produto1i1.jpg",
+	"imagemSecundaria":"../../../assets/imgProducts/produto1i2.jpg",
+	"categoria" : 1
+}
+
+{
+    "nomeProduto": "Gancho para rede de descanso",
+	"subTitulo": "Gancho para rede de descanso oxidado fabricado pela empresa União Mundial",
+	"descricaoProduto": "Fabricado pela Empresa União Mundial, o gancho de rede em aço é feito de material altamente resistente, e pode ser usado tanto em concreto, tijolo ou madeira. Cada gancho de rede de dormir acompanha quatro parafusos de cabeça redonda com fenda e quatro buchas de 10 mm. Em paredes de concreto e madeira podem suportar até 120 quilos.",
+	"dimensoesProduto": "10x6 cm",
+	"comprimentoProduto": "Informação não fornecida pela fabricante",
+	"pesoProduto": "+/- 300 gramas a unidade",
+	"desconto" : 135.99,
+	"valorProduto" : 90.61,
+	"imagemPrincipal": "../../../assets/imgProducts/produto2i1.jpg",
+	"imagemSecundaria":"../../../assets/imgProducts/produto2i2.jpg",
+	"categoria" : 1
+}
+
+{
+    "nomeProduto": "Gancho para rede de descanso",
+	"subTitulo": "Gancho para rede zincado gancho super resistente, usado para sustentação de redes. ",
+	"descricaoProduto": "Fácil de instalar, pode ser usado em paredes ou vigas de madeira. Material: aço zincado cor: prata medidas: 10 x 5,5 x 5,5 cm fabricante: bemfixa conteúdo da embalagem: 2 ganchos para rede",
+	"dimensoesProduto": "10x6 cm",
+	"comprimentoProduto": "10x6 cm",
+	"pesoProduto": "Informação não fornecida pela fabricante",
+	"desconto" : 175.00,
+	"valorProduto" : 68.32,
+	"imagemPrincipal": "../../../assets/imgProducts/produto3i1.jpg",
+	"imagemSecundaria":"../../../assets/imgProducts/produto3i2.jpg",
+	"categoria" : 1
+}
+
+{
+    "nomeProduto": "Gancho para rede de descanso",
+	"subTitulo": "Kit com ganchos em aço, parafusos e buchas 10mm",
+	"descricaoProduto": "Características: não enferruja na chuva, acabamento em zinco de alto brilho. Especificações técnicas: suporta até 60kg cada gancho. Conteúdo da embalagem: 2 ganchos de aço 50mm x 50mm com acabamento galvanizado de alto brilho; 8 parafusos sextavados que garantem maior resistência; 8 buchas 10mm para maior segurança.",
+	"dimensoesProduto": "50mm",
+	"comprimentoProduto": "50mm",
+	"pesoProduto": "22 gramas",
+	"desconto" : 130.00,
+	"valorProduto" : 52.55,
+	"imagemPrincipal": "../../../assets/imgProducts/produto4i1.jpg",
+	"imagemSecundaria":"../../../assets/imgProducts/produto4i2.jpg",
+	"categoria" : 1
+}

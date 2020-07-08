@@ -1,0 +1,28 @@
+
+
+<div class="wrapper fadeInDown mb-5">
+    <div id="formContent">
+        <form class="py-3">
+            <h4 class="font-weight-bolder text-center mb-5">ALTERAR CATEGORIA DO PRODUTO</h4>
+            <div class="row">
+                <div class=" col-12 ">
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-center">
+                            <select class="form-control text-center" (input) ="this.categoria = $event.target.value">
+                                <option disabled selected >Escolha a Categoria</option>
+                                <option value="1">Acessórios</option>
+                                <option value="2">Redes Para Adultos</option>
+                                <option value="3">Redes Para Crianças</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-outline-success" (click)="salvar()" routerLink="/productList">Confirmar</button>
+                        </div>                      
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+

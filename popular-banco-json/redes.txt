@@ -1,0 +1,153 @@
+{
+    "nomeProduto": "Rede de descanso Fustão Colorida",
+	"subTitulo": "Uma Rede de dormir em sua cor azul , fabricada em fio 100% algodão, sem misturas, esse modelo suporta até 200 quilos.",
+	"descricaoProduto": "As cordas e o tecido são confeccionados em teares mecânicos, o acabamento de nossas redes de dormir é feito manualmente, desde o modelo mais simples até os mais elaborados. A Rede de dormir fustão tem suas bordas laterais (varanda) Feitas à mão, assim como as tranças antes do punho. O punho é composto de 13 pares de cordas 100% algodão que garante a segurança de nossas redes de dormir.",
+	"produtPromocao":"1"
+	"dimensoesProduto": " 2,50 m x 1,50 m (só tecido)",
+	"comprimentoProduto": "3,90 m (punho a punho)",
+	"pesoProduto": " +/- 1,600 kg",
+	"desconto" : 150.15,
+	"valorProduto" : 77.65,
+	"imagemPrincipal": "../../../assets/imgProducts/produto5i1.jpg",
+	"imagemSecundaria":"../../../assets/imgProducts/produto5i2.jpg",
+	"categoria" : 2
+}
+
+
+{
+    "nomeProduto": "Rede de descanso Clone Azul",
+	"subTitulo": "Nossas redes de dormir são produzidas com fios 8/1 e 100% algodão, capacidade Máxima de Carga: 180 kg.",
+	"descricaoProduto": "Possui uma mamucaba que dá reforço e beleza aos punhos além de proporcionar a rede de descanso um acabamento sofisticado. Essa rede de dormir possui uma varanda feita artesanalmente com detalhes em forma de losango. A Rede clone azul pode ser usada em todo e qualquer ambiente, proporciona conforto em seu descanso devido o seu tecido macio e confortável, servindo ao mesmo tempo para decoração do seu lar. Tenha sempre um bom descanso e bons sonhos em nossas Redes de Dormir!",
+	"produtPromocao":"1"
+	"dimensoesProduto": " 2,70 m x 1,65 m",
+	"comprimentoProduto": "4,20 m",
+	"pesoProduto": "+/- 3,200 kg",
+	"desconto" : 300.65,
+	"valorProduto" : 206.55,
+	"imagemPrincipal": "../../../assets/imgProducts/produto6i1.jpg",
+	"imagemSecundaria":"../../../assets/imgProducts/produto6i2.jpg",
+	"categoria" : 2
+}
+
+{
+    "nomeProduto": "Rede de descanso Ostra Especial",
+	"subTitulo": "Seu acabamento foi feito de forma manual, as cabeças que seguram as cordas foram entrançadas a mão, essa rede de dormir suporte mais de 250 kilos",
+	"descricaoProduto": "Seu babado lateral (varandas) também foi confeccionado a mão, com 7 pares de fios que se entrelaçam entre si formando um conjunto de losangos. Nossas redes de dormir valorizam e apoiam o trabalho manual e seu artesanato, criando produtos com qualidade, durabilidade, beleza e que proporciona conforto e bem estar. Essa rede de dormir pode ser utilizada em diversos ambientes, sejam eles abertos como chácaras, alpendres ou varandas, como também em ambientes fechados, é um ótimo artigo de decoração além de proporcionar descanso e conforto.",
+	"produtPromocao":"0"
+	"dimensoesProduto": "2,75 m x 1,60 m",
+	"comprimentoProduto": "4,40 m",
+	"pesoProduto": "+/- 3,400 kg",
+	"desconto" : 250.65,
+	"valorProduto" : 169.95,
+	"imagemPrincipal": "../../../assets/imgProducts/produto7i1.jpg",
+	"imagemSecundaria":"../../../assets/imgProducts/produto7i2.jpg",
+	"categoria" : 2
+}
+
+{
+    "nomeProduto": "Rede de descanso Tarrafa Amarela.",
+	"subTitulo": "Essa Rede de Dormir e descanso é fabricada com fios 100% Nylon, altamente resistente",
+	"descricaoProduto": "altamente resistente,  esse modelo de rede foi  entrançada à mão, seu design é semelhante a uma rede de pesca tarrafa, em toda extremidade da rede não há nenhum nó, apenas entrançado entre as cordas , esse modelo suporta até 200 quilos.   Nossas redes de dormir valorizam e apoiam o trabalho manual e seu artesanato, criando produtos com qualidade, durabilidade, beleza e que proporciona conforto e bem estar. Essa rede de dormir pode ser utilizada em diversos ambientes, sejam eles abertos como chácaras, alpendres ou varandas, é possivel incluvise usar dentro d´água, é uma otima alternativa para quem deseja acampar. ",
+	"produtPromocao":"0"
+	"dimensoesProduto": "2,10 m x 1,60 m",
+	"comprimentoProduto": "3,26 m",
+	"pesoProduto": " : +/- 1,600 kg ",
+	"desconto" : 0,
+	"valorProduto": 45.95,
+	"imagemPrincipal": "../../../assets/imgProducts/produto8i1.jpg",
+	"imagemSecundaria":"../../../assets/imgProducts/produto8i2.jpg",
+	"categoria" : 2
+}
+
+{
+    "nomeProduto": "Rede de descanso Camuflada Exercito.",
+	"subTitulo": "Essa Rede de Dormir e descanso é fabricada com tecido  100% Nylon, altamente resistente e utilizado em paraquedas,  esse modelo suporta até 200 quilos.",
+	"descricaoProduto": "Essa rede de dormir pode ser utilizada em diversos ambientes, sejam eles abertos como chácaras, alpendres ou varandas, é possível inclusive usar dentro d´água, é uma ótima alternativa para quem deseja acampar.",
+	"produtPromocao":"1"
+	"dimensoesProduto": "2,00 m x 1,60 m",
+	"comprimentoProduto": "3,00 m",
+	"pesoProduto": " +/- 1,000 kg",
+	"desconto" : 0,
+	"valorProduto": 49.95,
+	"imagemPrincipal": "../../../assets/imgProducts/produto9i1.jpg",
+	"imagemSecundaria":"../../../assets/imgProducts/produto9i2.jpg",
+	"categoria" : 2
+}
+
+
+{
+    	"nomeProduto": "Rede de descanso Sol a Sol",
+	"subTitulo": " Rede De Dormir Descanso Casal Sol a Sol Gigante - Laranja - Produzido por  Redes Don Algodon ",
+	"descricaoProduto": "Rede de dormir da linha Sol a Sol Casal tem um tecido super resistênte, confortável e durável, pode ser armada em varandas, quartos e salas, ideal para aquele descanso pós almoço ou deitar e dormir aos fins de semana. Descanse e relaxe em nossas redes de dormir.",
+	"produtPromocao":"1"
+	"dimensoesProduto": "2.75 m x 1.60 m",
+	"comprimentoProduto": "4.40 m",
+	"pesoProduto": "1,700 kg",
+	"desconto" : 162.25,
+	"valorProduto" : 75.95,
+	"imagemPrincipal": "../../../assets/imgProducts/produto10i1.jpg",
+	"imagemSecundaria":"../../../assets/imgProducts/produto10i2.jpg ",
+	"categoria" : 2
+}
+
+
+{
+    	"nomeProduto": "Rede de descanso Tambara",
+	"subTitulo": " Rede de Dormir Casal Tambara Crua com Madeira ",
+	"descricaoProduto": " Uma rede de dormir em sua cor bege (crua), o algodão em sua forma natural, simples e ao mesmo tempo sofisticada. Possui uma malha especial na qual reforma e dar beleza aos punhos além de proporcionar a rede de dormir um acabamento sofisticado e sem costura, uma varanda feitaartesanalmente com detalhes em forma de losango.",
+	"produtPromocao":"0"
+	"dimensoesProduto": "2,70 m x 1,62 m ",
+	"comprimentoProduto": "4.20 m",
+	"pesoProduto": " 4.000 kg",
+	"desconto" : 600.25,
+	"valorProduto" : 499.95,
+	"imagemPrincipal": "../../../assets/imgProducts/produto11i1.jpg",
+	"imagemSecundaria":"../../../assets/imgProducts/produto11i2.jpg ",
+	"categoria" : 2
+}
+
+{
+    "nomeProduto": "Rede de descanso Macramé - Azul",
+	"subTitulo": " REDE DE DORMIR CLONE CASAL COM ACABAMENTO MACRAME ",
+	"descricaoProduto": "A Modelo Clone é conhecida por sua elegância, beleza e resistência. Indicada para ser usada em varandas, dormitórios e salas. Com um ótimo custo benefício. As varandas Macramê são confeccionadas artesanalmente feita à mão, assim como seus trancelins e demais acabamentos, constitui uma belíssima peça de decoração para seu ambiente.",
+	"produtPromocao":"0"
+	"dimensoesProduto": " 2,70 m x 1,70 m",
+	"comprimentoProduto": "4,20 m",
+	"pesoProduto": "3.100 kg",
+	"desconto" : 0,
+	"valorProduto" : 125.95,
+	"imagemPrincipal": "../../../assets/imgProducts/produto12i1.jpg",
+	"imagemSecundaria":"../../../assets/imgProducts/produto12i2.jpg ",
+	"categoria" : 2
+}
+
+
+{
+    "nomeProduto": "Rede de descanso",
+	"subTitulo": " Rede Luxuosa com garantia de 100% de conforto ",
+	"descricaoProduto": " Rede de descanso e dormir conhecida por sua elegância e beleza, luxuosa com excelente acabamento, indicada para varandas, dormitórios e salas. Ótimo custo benefício. Varandas confeccionadas artesanalmente, assim como seus trancelins e demais acabamentos, com punhos reforçados, garantindo maior segurança e abertura do produto.",
+	"produtPromocao":"1"
+	"dimensoesProduto": " 2,60 m x 1,60 m",
+	"comprimentoProduto": "4,20 m ",
+	"pesoProduto": " 3,200 kg",
+	"desconto" : 0,
+	"valorProduto" : 95.45,
+	"imagemPrincipal": "../../../assets/imgProducts/produto13i1.jpg",
+	"imagemSecundaria":"../../../assets/imgProducts/produto13i2.jpg ",
+	"categoria" : 2
+}
+
+{
+    "nomeProduto": " Rede de descanso Colorida",
+	"subTitulo": "  Rede multicolorida 100% algodão",
+	"descricaoProduto": "Rede 100% algodão com tecido confortável modelo diamante resistente e seguro,em uma posição muito confortável possibilitando um balanço suave para relaxar !De fácil instalação pois possui cordinhas em cada punho para amarrar e vários lugares. ",
+	"produtPromocao":"0"
+	"dimensoesProduto": " 2,70 m x 1,50",
+	"comprimentoProduto": "3,60 m",
+	"pesoProduto": " 2,000 kg",
+	"desconto" :130.25 ,
+	"valorProduto" : 69.99,
+	"imagemPrincipal": "../../../assets/imgProducts/produto14i1.jpg",
+	"imagemSecundaria":"../../../assets/imgProducts/produto14i2.jpg",
+	"categoria" : 2
+}

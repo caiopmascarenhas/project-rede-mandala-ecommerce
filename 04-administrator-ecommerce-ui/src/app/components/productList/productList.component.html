@@ -1,0 +1,49 @@
+<div class="container">
+  <h4 class=" font-weight-bolder text-center mt-5">LISTA DE PRODUTOS</h4>
+  <div class="invoice overflow-auto shadow mt-5 mb-5 ">
+    <div style="min-width: 600px ">
+      <main>
+        <table border="0" cellspacing="0" cellpadding="0">
+          <thead>
+            <tr id="titleHeader">
+              <th class="text-center">CÓDIGO</th>
+              <th class="text-center">IMAGEM</th>
+              <th class="text-center">NOME DO PRODUTO</th>
+              <th class="text-center">VALOR UNITÁRIO</th>
+              <th class="text-center">STATUS</th>
+              <th class="text-center">AÇÃO</th>
+              <th class="text-center">ALTERAR STATUS</th>
+            </tr>
+          </thead>
+          <tbody *ngFor="let i of produtos">
+            <tr>
+              <td class="text-center">
+                <h3><a>{{i.idProduto}}</a></h3>
+              </td>
+              <td class="text-center"><img id="imgProduct" class="card-img-top h-3" src={{i.imagem}}
+                  alt="Imagem de capa do card"></td>
+              <td class="text-center">
+                <h3><a>{{i.nomeProduto}}</a></h3>
+              </td>
+              <td id="total" class="text-center"><strong>{{i.valorCheio | currency: 'R$'}}</strong></td>
+              <td id="status" class="text-center">
+                <h3><a class="mt-4 text-danger" *ngIf="i.categoria == 4">Inativo</a></h3>
+                <h3><a class="mt-4 text-success" *ngIf="i.categoria != 4">Ativo</a></h3>
+              </td>
+              <td class="text-center">
+                <button class=" btn btn-outline-warning" type="button"
+                  [routerLink]="['/productAlter/'+(i.idProduto)]"><b>Alterar</b></button>
+              </td>
+              <td class="text-center">
+                <button class="btn btn-outline-danger" type="button" (click)="excluir(i.idProduto)"
+                  *ngIf="i.categoria != 4"><b>Desabilitar</b></button>
+                <button class="btn btn-outline-success" type="button" (click)="excluir(i.idProduto)"
+                  *ngIf="i.categoria == 4" [routerLink]="['/productEnable/'+(i.idProduto)]"> <b>Habilitar</b></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
+    </div>
+  </div>
+</div>
